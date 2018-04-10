@@ -2031,7 +2031,7 @@ body {
     transition: all 0.3s ease 0s
 }
 
-@media (max-width: 414px) {
+@media (max-width: 451px) {
     .primary-btn {
         width: 220px
     }
@@ -2060,27 +2060,34 @@ body {
     }
 }
 
-.banner-content h1 {
+.banner-content h1 {    
     color: #fff;
     font-size: 124px;
     letter-spacing: 25px;
     text-indent: 22px;
     font-weight: 300;
     line-height: 1.15em;
-    margin-bottom: 0px;   /* Removed margin for multi-header stacking - REPLACE WITH 20px IF ISSUES ARISE */ 
-    text-shadow: -8px 15px 8px rgba(0, 0, 0, 0.4);
+    margin-bottom: 20px;
+    text-shadow: -8px 15px 8px rgba(0, 0, 0, 0.4)
     text-align: center;
+	padding-left 10;
 }
 
 @media (max-width: 991px) {
     .banner-content h1 {
-        font-size: 80px   /* Modified font size, could change in the future */
+        font-size: 75px   /* Modified font size, could change in the future */
     }
 }
 
 @media (max-width: 767px) {
     .banner-content h1 {
         font-size: 70px
+    }
+}
+
+@media (max-width: 451px) {
+    .banner-content h1 {
+        font-size: 40px
     }
 }
 
