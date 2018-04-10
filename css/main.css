@@ -2067,19 +2067,20 @@ body {
     text-indent: 22px;
     font-weight: 300;
     line-height: 1.15em;
-    margin-bottom: 20px;
-    text-shadow: -8px 15px 8px rgba(0, 0, 0, 0.4)
+    margin-bottom: 0px;
+    text-shadow: -8px 15px 8px rgba(0, 0, 0, 0.4);
+    text-align: center;
 }
 
 @media (max-width: 991px) {
     .banner-content h1 {
-        font-size: 34px
+        font-size: 80px
     }
 }
 
 @media (max-width: 767px) {
     .banner-content h1 {
-        font-size: 20px
+        font-size: 60px
     }
 }
 
@@ -2629,4 +2630,3 @@ textarea:focus,
 button:focus {
     outline: none;
 }
-
