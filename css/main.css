@@ -2037,6 +2037,12 @@ body {
     }
 }
 
+@media (max-width: 451px) {
+    .primary-btn {
+        width: fit-content !important;
+    }
+} /*adjustment */
+
 .banner-area {
     background: url(../img/header-bg.jpg) no-repeat;
     background-position: center;
@@ -2631,7 +2637,7 @@ body {
     background-size: cover !important;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    height: 33rem;
+    height: -webkit-fill-available;
 }
 
 input:focus,
@@ -2737,3 +2743,112 @@ figure.snip1321.hover:after {
 }
 
 /* end sponsor page */
+
+/* toggle sponsor */
+.paypalToggle {
+background-image: -webkit-linear-gradient(0deg, #77d5f7 0%, #3c50ca 100%) !important;
+margin-left: 5% !important;
+}
+
+.messageToggle {
+margin-right: 5% !important;
+}
+
+@media (max-width: 767px) {
+    .paypalToggle{
+        margin-left: 0 !important;
+        float: none !important;
+    }
+
+    .paypalToggleDiv {
+        justify-content: center;
+    }
+
+    .messageToggle{
+        margin-right: 0 !important;
+        float: none !important;
+        width: fit-content !important;
+        margin-left: 6% !important;
+    }
+    
+    .messageToggleDiv {
+        justify-content: center;
+    }
+
+    .messageClose, .paypalClose {
+        top: 1.5% !important;
+        right: 1.5% !important;
+    }
+
+    .messageSection, .paypalSection {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    .contact-img-div {
+        height: 10rem;
+    }
+    
+    .messageContainer, .paypalContainer {
+        max-width: 767px;
+        width: 97%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
+@media (max-width: 991px) and (min-width: 769px){
+    .paypalClose{
+        top: -70% !important;
+    }
+    
+    .messsageClose {
+        top: -0.7% !important;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 768px) {
+
+    .paypalSubmit {
+        margin-right: 1%;
+    }
+
+    .messageContainer, .paypalContainer {
+        max-width: 768px;
+        width: 100%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
+
+.messageSection {
+    display: none;
+}
+
+.paypalSection {
+    display: none;
+}
+
+.messageClose {
+    position: absolute;
+    top: -8%;
+    right: 1%;
+    background-color: transparent;
+    border: none;
+}
+
+.paypalClose {
+    position: absolute;
+    top: -64%;
+    right: 1%;
+    background-color: transparent;
+    border: none;
+}
+
+.closeIcon {
+    font-size: 1.3rem;
+}
+
+.closeButtonIcon {
+    font-size: 0.8rem;
+    color: white;
+}

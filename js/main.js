@@ -120,7 +120,28 @@ $(document).ready(function(){
  e.preventDefault();
  var b = document.getElementById('paypalAmount').value;
  window.location.href = 'http://paypal.me/davidli3100/'+b;
- 
+ });
+
+ //end paypal
+
+ //now start toggling for sponsorship options
+ $('.paypalToggle').click(function(){
+    $('.toggleSection').hide(1000);
+    $('.paypalSection').show(700);
+ });
+
+ $('.paypalCloseNew').click(function(){
+    $('.paypalSection').hide(1000);
+    $('.toggleSection').show(700);
+ });
+
+ $('.messageCloseNew').click(function(){
+    $('.messageSection').hide(1000);
+    $('.toggleSection').show(700);
  });
  
+ $('.messageToggle').click(function(){
+    $('.toggleSection').hide(1000);
+    $('.messageSection').show(700);
+ });
 
