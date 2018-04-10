@@ -2720,5 +2720,9 @@ figure.snip1321.hover:after {
   opacity: 0.9;
 }
 
+.paypal-icon {
+    max-height: 1.2rem;
+    margin-right: 0.5rem;
+}
 
 /* end sponsor page */

@@ -112,3 +112,15 @@ $(document).ready(function(){
         });
     });
  });
+
+ //submit paypal
+
+ var a = document.getElementById('paypalForm');
+ a.addEventListener('submit',function(e) {
+ e.preventDefault();
+ var b = document.getElementById('paypalAmount').value;
+ window.location.href = 'http://paypal.me/davidli3100/'+b;
+ 
+ });
+ 
+
