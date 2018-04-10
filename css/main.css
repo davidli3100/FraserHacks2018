@@ -2068,9 +2068,9 @@ body {
     font-weight: 300;
     line-height: 1.15em;
     margin-bottom: 20px;
-    text-shadow: -8px 15px 8px rgba(0, 0, 0, 0.4)
+    text-shadow: -8px 15px 8px rgba(0, 0, 0, 0.4);
     text-align: center;
-	padding-left 10;
+	padding-left: 10;
 }
 
 @media (max-width: 991px) {
