@@ -2075,25 +2075,28 @@ body {
 
 @media (max-width: 991px) {
     .banner-content h1 {
-        font-size: 75px   /* Modified font size, could change in the future */
+        font-size: 75px;   /* Modified font size, could change in the future */
+        text-shadow: none;
     }
 }
 
 @media (max-width: 767px) {
     .banner-content h1 {
-        font-size: 70px
+        font-size: 70px;
+        text-shadow: none;
     }
 }
 
 @media (max-width: 451px) {
     .banner-content h1 {
-        font-size: 40px
+        font-size: 40px;
+        text-shadow: none;
     }
 }
 
 .banner-content h4 {
     letter-spacing: 2px;
-    font-weight: 200
+    font-weight: 200;
 }
 
 @media (max-width: 767px) {
