@@ -2040,6 +2040,7 @@ body {
 @media (max-width: 451px) {
     .primary-btn {
         width: fit-content !important;
+        width: -webkit-fit-content;
     }
 } /*adjustment */
 
@@ -2545,6 +2546,12 @@ body {
     text-align: center
 }
 
+#thankyou_message {
+    text-align: center;
+    width: 100%;
+    margin-top: 60px;
+}
+
 .element-contact {
     background-color: #f9f9ff
 }
@@ -2851,4 +2858,38 @@ margin-right: 5% !important;
 .closeButtonIcon {
     font-size: 0.8rem;
     color: white;
+}
+
+/*event info */
+.event-heading {
+    font-size: 2.3rem;
+    font-weight: 500;
+    color: black;
+    text-align: center;
+    margin: 0 auto; 
+}
+
+.event-title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: black;
+    padding-right: 0.8%;
+    display: table-cell;
+}
+
+.event-info {
+    font-size: 1.8rem;
+    font-weight: 200;
+    color: black;
+}
+
+.event-div {
+    text-align: left;
+    line-height: 2rem;
+    display: table-row;
+}
+
+.map-link {
+    color: royalblue !important;
+    cursor: pointer;
 }

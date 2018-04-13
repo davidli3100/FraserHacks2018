@@ -1,0 +1,49 @@
+[debug] [2018-04-12T14:56:11.089Z] ----------------------------------------------------------------------
+[debug] [2018-04-12T14:56:11.097Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\david\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase init
+[debug] [2018-04-12T14:56:11.097Z] CLI Version:   3.17.7
+[debug] [2018-04-12T14:56:11.097Z] Platform:      win32
+[debug] [2018-04-12T14:56:11.097Z] Node Version:  v8.10.0
+[debug] [2018-04-12T14:56:11.101Z] Time:          Thu Apr 12 2018 10:56:11 GMT-0400 (Eastern Daylight Time)
+[debug] [2018-04-12T14:56:11.101Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-04-12T14:56:11.125Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2018-04-12T14:56:11.125Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\FraserHacks2018
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2018-04-12T14:56:15.455Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-04-12T14:56:15.459Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/LZad163QitsFeqtxK0DSRGYi2x_m4Ut8eFZuJTF0iAGPDtNJ1_aUOdyqc2NzvmK7',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Thu Apr 12 2018 10:56:15 GMT-0400 (Eastern Daylight Time)
+[debug] [2018-04-12T14:56:15.847Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-12T14:56:15.891Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects  
+  
+ Thu Apr 12 2018 10:56:15 GMT-0400 (Eastern Daylight Time)
+[debug] [2018-04-12T14:56:15.999Z] Error: read ECONNRESET
+    at _errnoException (util.js:1022:11)
+    at TLSWrap.onread (net.js:628:25)
+[error] 
+[error] Error: Server Error. read ECONNRESET

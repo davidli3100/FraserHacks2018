@@ -68,6 +68,24 @@
 		</section>
 		<!-- End Banner Area -->
 
+		<!-- start event info area -->
+	<section class="event-info pt-100 pb-100">      
+			<div class="col-md-2"></div>
+			<div class="justify-content-center event-master-div col-md-8" style="margin: 0 auto;" >
+				<div class="col-md-2"></div>
+				<div class="event-heading col-md-12 pb-50">Event Info</div>
+				<div class="col-md-12 event-div pb-20">
+				<span class="event-title">Where: </span><p class="event-text">John Fraser Secondary School, 2665 Erin Centre Blvd, Mississauga, Ontario, Canada</p>
+				</div>
+				<div class="col-md-12 event-div pb-20">
+				<span class="event-title">What: </span><p class="event-text">A Hackathon Focusing on the Theme of <em>Accessibility</em></p>
+				</div>
+				<div class="col-md-12 event-div pb-20">
+				<span class="event-title">When: </span><p class="event-text"><a class="map-link" href="https://goo.gl/maps/SUPBDqVgJb32">John Fraser Secondary School, 2665 Erin Centre Blvd, Mississauga, Ontario, Canada</a></p>
+				</div>
+			</div>
+	</section> 
+
 		<!-- Start feature Area -->
 	<!--	<section class="feature-area">
 			<div class="container">
@@ -271,15 +289,19 @@
 					<!--	<img class="mx-auto d-flex img-fluid" src="img/contact.jpg" alt=""> -->
 					</div>
 					<div class="col-lg-9 col-md-8 no-padding contact-right">
-						<form id="myForm" action="mail.php" method="post" class="contact-form text-right">
+						<form id="myForm" action="https://formspree.io/david.li3100@gmail.com" method="POST" class="contact-form text-right">
 							<h4 style="font-weight: 200; font-size: 2.2rem; text-align: left;">Have Any Questions?</h4>
 							<h3 style="font-weight: 400; font-size: 1.6rem; text-align: left; margin-bottom: 2rem; margin-top: 0.3rem;">Contact Us!</h3>
 							<input name="fname" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="common-input mt-10" required="" type="text">
 							<input name="email" placeholder="Enter email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" class="common-input mt-10" required="" type="email">
-							<textarea class="common-textarea mt-10" name="message" placeholder="Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Message'" required=""></textarea>
+							<input type="hidden" name="_next" value="david.li3100.github.io/FraserHacks2018"/>
+							<textarea class="common-textarea mt-10" name="message" placeholder="Message" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Message'" required=""></textarea>
 							<button class="float-left primary-btn primary circle d-inline-flex align-items-center mt-10 ml-auto"><span class="mr-10">Send Message</span><span class="lnr lnr-arrow-right"></span></button>
 							<div class="alert-msg"></div>
-						</form>
+							</form>
+								<!-- custom thank you message -->
+								<div style="display: none" id="thankyou_message"><h3>Thanks For Contacting Us! We'll Get Back To You ASAP!</h3></div>
+							
 					</div>
 				</div>
 			</div>
@@ -311,5 +333,7 @@
 		<script src="js/jquery.magnific-popup.min.js"></script>
 		<script src="js/jquery.flipster.min.js"></script>
 		<script src="js/main.js"></script>
+		<script data-cfasync="false" type="text/javascript"
+		src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
 	</body>
 </html>
