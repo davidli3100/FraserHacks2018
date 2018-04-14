@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="zxx" class="no-js">
 <style>
-    .google-maps {
-        position: relative;
-        padding-bottom: 75%; // This is the aspect ratio
-        height: 0;
-        overflow: hidden;
-    }
-    .google-maps iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100% !important;
-        height: 100% !important;
-    }
+	.google-maps {
+		position: relative;
+		padding-bottom: 75%; // This is the aspect ratio
+		height: 0;
+		overflow: hidden;
+	}
+
+	.google-maps iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100% !important;
+		height: 100% !important;
+	}
 </style>
+
 <head>
 	<!-- Mobile Specific Meta -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -33,81 +35,128 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Poppins:100,400,300,500,600,700" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<!--
+	<!--
 		CSS
 		============================================= -->
-		<link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
-		<link rel="stylesheet" href="css/linearicons.css">
-		<link rel="stylesheet" href="css/owl.carousel.css">
-		<link rel="stylesheet" href="css/font-awesome.min.css">
-		<link rel="stylesheet" href="css/nice-select.css">
-		<link rel="stylesheet" href="css/magnific-popup.css">
-		<link rel="stylesheet" href="css/bootstrap.css">
-		<link rel="stylesheet" href="css/main.css">
-	</head>
-	<body>
-		<!-- Start Header Area -->
-		<header class="default-header">
-			<div class="container">
-				<div class="header-wrap">
-					<div class="header-top d-flex justify-content-between align-items-center">
-						<div class="logo">
-							<a href="index.html"><img style="width: 6rem;"src="img/logo.png" alt=""></a>
-						</div>
-						<div class="main-menubar d-flex align-items-center">
-							<nav class="hide">
-								<a href="index.html">Home</a>
-								<a href="sponsorToggle.html">Sponsors</a>
-								<a href="#">About</a>
-							</nav>
-							<div class="menu-bar"><span class="lnr lnr-menu"></span></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
-		<!-- End Header Area -->
-		<!-- Start Banner Area -->
-		<section class="banner-area relative">
-			<div class="container">
-				<div class="row fullscreen align-items-center justify-content-between" style="height: 735px;">
-					<div class="col-lg-12">
-						<div class="banner-content text-center">
-							<h4 class="text-white text-uppercase">Introducing</h4>
-							<h1 class="text-uppercase" margin-bottom: 20px>Fraser</h1>
-							<h1 class="text-uppercase">Hacks</h1>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End Banner Area -->
+	<link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/linearicons.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/nice-select.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/main.css">
 
-		<!-- start event info area -->
-	<section class="event-info pt-100 pb-100">
-			<div class="col-md-2"></div>
-			<div class="justify-content-center event-master-div col-md-8" style="margin: 0 auto;" >
-				<div class="col-md-2"></div>
-				<div class="event-heading col-md-12 pb-50">Event Info</div>
-				<div class="col-md-12 event-div pb-20">
-				<span class="event-title">Who: </span><p class="event-text">High School Students From Across The Peel Region</p>
-				</div>
-				<div class="col-md-12 event-div pb-20">
-				<span class="event-title">What: </span><p class="event-text">A Hackathon Focusing on the Theme of <em>Accessibility</em></p>
-				</div>
-				<div class="col-md-12 event-div pb-20">
-				<span class="event-title">Where: </span><p class="event-text"><a class="map-link" href="https://goo.gl/maps/SUPBDqVgJb32">John Fraser Secondary School, 2665 Erin Centre Blvd, Mississauga, Ontario, Canada</a></p>
-				</div>
-				<div class="col-md-12 event-div pb-20">
-				<span class="event-title">When: </span><p class="event-text">May the 5th, 2018. 8:00 AM to 6:00 PM</p>
-				</div>
-				<div class="google-maps">
-    			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2891.2308182840566!2d-79.71895328450529!3d43.56007327912466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b418b3d8ade65%3A0xba2d4d9099046a2!2sJohn+Fraser+Secondary+School!5e0!3m2!1sen!2sca!4v1523666848371" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+	<!-- AddEvent script -->
+	<script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
+
+	<!-- AddEvent Settings -->
+	<script type="text/javascript">
+		window.addeventasync = function() {
+			addeventatc.settings({
+				appleical: {
+					show: true,
+					text: "Apple Calendar"
+				},
+				google: {
+					show: true,
+					text: "Google <em>(online)</em>"
+				},
+				outlook: {
+					show: true,
+					text: "Outlook"
+				},
+				outlookcom: {
+					show: true,
+					text: "Outlook.com <em>(online)</em>"
+				},
+				yahoo: {
+					show: true,
+					text: "Yahoo <em>(online)</em>"
+				}
+			});
+		};
+	</script>
+
+</head>
+
+<body>
+	<!-- Start Header Area -->
+	<header class="default-header">
+		<div class="container">
+			<div class="header-wrap">
+				<div class="header-top d-flex justify-content-between align-items-center">
+					<div class="logo">
+						<a href="index.html"><img style="width: 6rem;"src="img/logo.png" alt=""></a>
+					</div>
+					<div class="main-menubar d-flex align-items-center">
+						<nav class="hide">
+							<a href="index.html">Home</a>
+							<a href="sponsorToggle.html">Sponsors</a>
+							<a href="#">About</a>
+						</nav>
+						<div class="menu-bar"><span class="lnr lnr-menu"></span></div>
+					</div>
 				</div>
 			</div>
+		</div>
+	</header>
+	<!-- End Header Area -->
+	<!-- Start Banner Area -->
+	<section class="banner-area relative">
+		<div class="container">
+			<div class="row fullscreen align-items-center justify-content-between" style="height: 735px;">
+				<div class="col-lg-12">
+					<div class="banner-content text-center">
+						<h4 class="text-white text-uppercase">Introducing</h4>
+						<h1 class="text-uppercase" margin-bottom: 20px>Fraser</h1>
+						<h1 class="text-uppercase">Hacks</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Banner Area -->
+
+	<!-- start event info area -->
+	<section class="event-info pt-100 pb-100">
+		<div class="col-md-2"></div>
+		<div class="justify-content-center event-master-div col-md-8" style="margin: 0 auto;">
+			<div class="col-md-2"></div>
+			<div class="event-heading col-md-12 pb-50">Event Info</div>
+			<div class="col-md-12 event-div pb-20">
+				<span class="event-title">Who: </span>
+				<p class="event-text">High School Students From Across The Peel Region</p>
+			</div>
+			<div class="col-md-12 event-div pb-20">
+				<span class="event-title">What: </span>
+				<p class="event-text">A Hackathon Focusing on the Theme of <em>Accessibility</em></p>
+			</div>
+			<div class="col-md-12 event-div pb-20">
+				<span class="event-title">Where: </span>
+				<p class="event-text"><a class="map-link" href="https://goo.gl/maps/SUPBDqVgJb32">John Fraser Secondary School, 2665 Erin Centre Blvd, Mississauga, Ontario, Canada</a></p>
+			</div>
+			<div class="col-md-12 event-div pb-20">
+				<span class="event-title">When: </span>
+				<p class="event-text">May the 5th, 2018. 8:00 AM to 6:00 PM</p>
+			</div>
+			<div title="Add to Calendar" class="addeventatc">
+				Add to Calendar
+				<span class="start">05/05/2018 08:00 AM</span>
+				<span class="end">05/05/2018 6:00 PM</span>
+				<span class="timezone">America/Toronto</span>
+				<span class="title">Fraser Hacks</span>
+				<span class="description">A hackathon hosted by John Fraser Secondary School, focusing on the theme of accessibility</span>
+				<span class="location">John Fraser Secondary School, 2665 Erin Centre Blvd, Mississauga, Ontario, Canada</span>
+			</div>
+			<div class="google-maps">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2891.2308182840566!2d-79.71895328450529!3d43.56007327912466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b418b3d8ade65%3A0xba2d4d9099046a2!2sJohn+Fraser+Secondary+School!5e0!3m2!1sen!2sca!4v1523666848371"
+				  width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+		</div>
 	</section>
 
-		<!-- Start feature Area -->
+	<!-- Start feature Area -->
 	<!--	<section class="feature-area">
 			<div class="container">
 				<div class="row pt-100">
@@ -159,7 +208,7 @@
 		</section>
 		<!-- End feature Area -->
 
-		<!-- Start video Area -->
+	<!-- Start video Area -->
 	<!--	<section class="video-area">
 			<div class="container">
 				<div class="row d-flex justify-content-center video-wrap">
@@ -185,7 +234,7 @@
 		</section>
 		<!-- End video Area -->
 
-		<!-- Start service Area -->
+	<!-- Start service Area -->
 	<!--	<section class="service-area">
 			<div class="container-fluid">
 				<div class="row justify-content-start align-items-center">
@@ -238,7 +287,7 @@
 		</section>
 		<!-- End service Area -->
 
-		<!-- Start latest-work Area -->
+	<!-- Start latest-work Area -->
 	<!--	<section class="latest-work-area pt-100 pb-100">
 			<div class="container-fluid">
 				<div class="row justify-content-center d-flex">
@@ -273,89 +322,93 @@
 		</section>
 		<!-- End latest-work Area -->
 
-		<!-- Start newsletter Area -->
-		<section class="subscription-area pt-100 pb-100">
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-lg-8">
-						<div class="section-title text-center">
-							<h3>Subscribe <br>
+	<!-- Start newsletter Area -->
+	<section class="subscription-area pt-100 pb-100">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-8">
+					<div class="section-title text-center">
+						<h3>Subscribe <br>
 							for Updates and <span>Information</span></h3>
-							<p>We won’t send any kind of spam</p>
-						</div>
-					</div>
-				</div>
-				<div class="row justify-content-center">
-					<div class="col-lg-6">
-						<div id="mc_embed_signup">
-							<form target="_blank" novalidate="true" action="https://fraserhacks.us18.list-manage.com/subscribe/post?u=2383e9849e1bcfbd49502f8f5&amp;id=d45c80ba93" method="get" class="subscription relative">
-								<input name="EMAIL" placeholder="Email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email address'" required="" type="email">
-								<div style="position: absolute; left: -5000px;">
-									<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
-								</div>
-								<button class="primary-btn hover d-inline-flex align-items-center"><span class="mr-10">Subscribe</span><span class="lnr lnr-arrow-right"></span></button>
-								<div class="info"></div>
-							</form>
-						</div>
+						<p>We won’t send any kind of spam</p>
 					</div>
 				</div>
 			</div>
-		</section>
-		<!-- End newsletter Area -->
-		<!-- Start contact Area -->
-		<section class="contact-area pt-100 pb-100">
-			<div class="container">
-				<div class="row align-items-center white-bg wrap-contact">
-					<div class="col-lg-3 col-md-4 contact-left no-padding contact-img-div">
+			<div class="row justify-content-center">
+				<div class="col-lg-6">
+					<div id="mc_embed_signup">
+						<form target="_blank" novalidate="true" action="https://fraserhacks.us18.list-manage.com/subscribe/post?u=2383e9849e1bcfbd49502f8f5&amp;id=d45c80ba93" method="get" class="subscription relative">
+							<input name="EMAIL" placeholder="Email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email address'" required="" type="email">
+							<div style="position: absolute; left: -5000px;">
+								<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+							</div>
+							<button class="primary-btn hover d-inline-flex align-items-center"><span class="mr-10">Subscribe</span><span class="lnr lnr-arrow-right"></span></button>
+							<div class="info"></div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End newsletter Area -->
+	<!-- Start contact Area -->
+	<section class="contact-area pt-100 pb-100">
+		<div class="container">
+			<div class="row align-items-center white-bg wrap-contact">
+				<div class="col-lg-3 col-md-4 contact-left no-padding contact-img-div">
 					<!--	<img class="mx-auto d-flex img-fluid" src="img/contact.jpg" alt=""> -->
-					</div>
-					<div class="col-lg-9 col-md-8 no-padding contact-right">
-						<form id="myForm" action="https://formspree.io/david.li3100@gmail.com" method="POST" class="contact-form text-right">
-							<h4 style="font-weight: 200; font-size: 2.2rem; text-align: left;">Have Any Questions?</h4>
-							<h3 style="font-weight: 400; font-size: 1.6rem; text-align: left; margin-bottom: 2rem; margin-top: 0.3rem;">Contact Us!</h3>
-							<input name="fname" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="common-input mt-10" required="" type="text">
-							<input name="email" placeholder="Enter email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" class="common-input mt-10" required="" type="email">
-							<input type="hidden" name="_next" value="david.li3100.github.io/FraserHacks2018"/>
-							<input type="hidden" name="_subject" value="New submission to Fraser Hacks 2018!" />
-							<textarea class="common-textarea mt-10" name="message" placeholder="Message" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Message'" required=""></textarea>
-							<button class="float-left primary-btn primary circle d-inline-flex align-items-center mt-10 ml-auto"><span class="mr-10">Send Message</span><span class="lnr lnr-arrow-right"></span></button>
-							<div class="alert-msg"></div>
-							</form>
-								<!-- custom thank you message -->
-								<div style="display: none" id="thankyou_message"><h3>Thanks For Contacting Us! We'll Get Back To You ASAP!</h3></div>
+				</div>
+				<div class="col-lg-9 col-md-8 no-padding contact-right">
+					<form id="myForm" action="https://formspree.io/david.li3100@gmail.com" method="POST" class="contact-form text-right">
+						<h4 style="font-weight: 200; font-size: 2.2rem; text-align: left;">Have Any Questions?</h4>
+						<h3 style="font-weight: 400; font-size: 1.6rem; text-align: left; margin-bottom: 2rem; margin-top: 0.3rem;">Contact Us!</h3>
+						<input name="fname" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="common-input mt-10" required="" type="text">
+						<input name="email" placeholder="Enter email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" class="common-input mt-10" required="" type="email">
+						<input type="hidden" name="_next" value="david.li3100.github.io/FraserHacks2018" />
+						<input type="hidden" name="_subject" value="New submission to Fraser Hacks 2018!" />
+						<textarea class="common-textarea mt-10" name="message" placeholder="Message" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Message'" required=""></textarea>
+						<button class="float-left primary-btn primary circle d-inline-flex align-items-center mt-10 ml-auto"><span class="mr-10">Send Message</span><span class="lnr lnr-arrow-right"></span></button>
+						<div class="alert-msg"></div>
+					</form>
+					<!-- custom thank you message -->
+					<div style="display: none" id="thankyou_message">
+						<h3>Thanks For Contacting Us! We'll Get Back To You ASAP!</h3></div>
 
-					</div>
 				</div>
 			</div>
-		</section>
-		<!-- End contact Area -->
-		<!-- Start Footer Area -->
-		<footer class="footer-area pt-40 pb-40">
-			<div class="container">
-				<div class="footer-bottom d-flex justify-content-between align-items-center flex-wrap">
-					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-					<p class="footer-text m-0 text-white">Copyright &copy;<script>document.write(new Date().getFullYear());</script> | Fraser Hacks | All rights reserved</p>
-					<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-					<div class="footer-social d-flex align-items-center">
-						<a href="#"><i class="fa fa-facebook"></i></a>
-						<a href="#"><i class="fa fa-twitter"></i></a>
-						<a href="#"><i class="fa fa-dribbble"></i></a>
-						<a href="#"><i class="fa fa-behance"></i></a>
-					</div>
+		</div>
+	</section>
+	<!-- End contact Area -->
+	<!-- Start Footer Area -->
+	<footer class="footer-area pt-40 pb-40">
+		<div class="container">
+			<div class="footer-bottom d-flex justify-content-between align-items-center flex-wrap">
+				<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+				<p class="footer-text m-0 text-white">Copyright &copy;
+					<script>
+						document.write(new Date().getFullYear());
+					</script> | Fraser Hacks | All rights reserved</p>
+				<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+				<div class="footer-social d-flex align-items-center">
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-dribbble"></i></a>
+					<a href="#"><i class="fa fa-behance"></i></a>
 				</div>
 			</div>
-		</footer>
-		<!-- End Footer Area -->
-		<script src="js/vendor/jquery-2.2.4.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-		<script src="js/vendor/bootstrap.min.js"></script>
-		<script src="js/jquery.ajaxchimp.min.js"></script>
-		<script src="js/owl.carousel.min.js"></script>
-		<script src="js/jquery.nice-select.min.js"></script>
-		<script src="js/jquery.magnific-popup.min.js"></script>
-		<script src="js/jquery.flipster.min.js"></script>
-		<script src="js/main.js"></script>
-		<script data-cfasync="false" type="text/javascript"
-		src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
-	</body>
+		</div>
+	</footer>
+	<!-- End Footer Area -->
+	<script src="js/vendor/jquery-2.2.4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.nice-select.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/jquery.flipster.min.js"></script>
+	<script src="js/main.js"></script>
+	<script data-cfasync="false" type="text/javascript" src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+</body>
+
 </html>
